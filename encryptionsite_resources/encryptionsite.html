@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
+        <style>
+            
+        </style>
     </head>
     <body>
         <p>
             The JEM cypher software & interaction
         </p>
-        <form onsubmit="encrypt()">
+        <form onsubmit="encrypt()" name="toEncrypt">
             To encrypt your text </br>
         <input type="text" id="text" placeholder="text to encrypt" required >
         <input type="submit" value="encrypt your message!" >
         </form>
-        <form onsubmit = 'decrypt()'>
+        <form onsubmit = 'decrypt()' name="toDecrypt">
             To decrypt text: <br>
             <input type="text" placeholder="text to decrypt" id="what" required>
             <input type="submit" value="decrypt your message">

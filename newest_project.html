@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Number anyalisis site
+        </title>
+        <style>
+            #number{
+                width:2.5in; 
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <h2>Find all you need to know about a number!</h2>
+        </nav>
+        <main>
+            <p>Note: This site anyalizes a typed number for a variety of purposes</p>
+            <form onsubmit="numAnalysis()" name="num" onclick="active()">
+                INPUT NUMBER HERE: (if a fraction place as numerator/denominator, if a radical place as multiplier, root#(radicand))<br>
+                    Normal number<br>
+                        <input type="radio" name="num" id="divisible" required>Find all factors!<br>
+                        <input type="radio" name="num" id="primeFactor" required>Prime Factorize!<br>
+                        <input type="radio" name="num" id="findRoot" required>Find the roots (if any) of this number<br>
+                    Fraction number<br>
+                        <input type="radio" name="num" id="LCD" required>Find the LCD of a fraction(simplify)<br>
+                    Radical number<br>
+                        <input type="radio" name="num" id="simplify" required>simplify a radical(because too many calculators just give decimals)<br>
+                        <input type="radio" name="num" id="radExp" required>convert to exponent<br>
+                     <input type="text" name="number" id="number" placeholder="" required><br>
+                <input type="submit" value="submit">
+            </form>
+            <p id="returnText"></p>
+        </main>
+        <script src="numAnalysis.js">
+
+        </script>
+    </body>
+</html>
